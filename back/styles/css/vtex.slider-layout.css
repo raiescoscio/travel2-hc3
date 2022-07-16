@@ -1,0 +1,56 @@
+.sliderLayoutContainer {
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  max-width: 960px;
+}
+.sliderLayoutContainer--carousel {
+  background-color: rgb(48, 48, 48);
+}
+
+.sliderTrackContainer {
+  max-width: 960px;
+  height: 400px;
+}
+
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.paginationDotsContainer--carousel {
+  margin-bottom: 1.3rem;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 960rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.caretIcon--carousel {
+  color:darkgrey;
+  margin-bottom: -21.8rem;
+}
+
+.caretIcon--products-list {
+  color:darkgrey;
+}
+
+.imageElement--carousel {
+  border-radius: 1rem;
+}
+
+.sliderLayoutContainer--products-list {
+  height: auto;
+}
+
+.paginationDot--isActive {
+  background-color:rgb(89, 255, 0);
+}

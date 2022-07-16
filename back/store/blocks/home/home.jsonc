@@ -1,0 +1,93 @@
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "__fold__.experimentalLazyAssets",
+      //"flex-layout.row#deals",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      //"info-card#home",
+      //"rich-text#question",
+      //"rich-text#link",
+      "newsletter"
+    ]
+  },
+
+  "flex-layout.row#demo": {
+    "children": ["list-context.image-list#demo"],
+    "props": {
+      "blockClass": "carousel-block"
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "images": [
+        {
+          "image": "https://raw.githubusercontent.com/rtof83/upmedal_client/main/images/banner01.png"
+          //"mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://raw.githubusercontent.com/rtof83/upmedal_client/main/images/banner02.png"
+          //"mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "slideTransition": { "speed": 200, "delay": 0, "timing": "" }
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "### você está vendo produtos",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  "slider-layout#demo-products": {
+    "props": {
+      //"id": "products-list",
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "products-list"
+    }
+  },
+
+  "newsletter": {
+    "props":{
+      "blockClass": "news"
+    }
+  }
+}
