@@ -7,9 +7,24 @@
 ### ROUTES WITH ID (GET, POST, DELETE)
 - `https://5ngovpktp9.execute-api.us-east-1.amazonaws.com/v1/{id}`
 
+### ROUTE POINTS
+- `https://5ngovpktp9.execute-api.us-east-1.amazonaws.com/calcpoints`
+
 
 ## DynamoDB struture
-- `{`
-    `id: string,`
-    `name: string`
-  `}`
+- `users:`
+  - `{`
+      `id: string,`
+      `name: string`,
+      `email: string`,
+      `points: number`
+    `}`
+
+- `orders:`
+  - `{`
+      `id: string,`
+      `user_id: string`,
+      `date: string`
+      `value: number`
+    `}`
+    

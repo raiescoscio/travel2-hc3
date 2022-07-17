@@ -1,5 +1,6 @@
 const AWS = require("aws-sdk");
 const dynamo = new AWS.DynamoDB.DocumentClient();
+
 const TableName = "store";
 
 exports.handler = async (event, context) => {
@@ -26,6 +27,7 @@ exports.handler = async (event, context) => {
         body = await dynamo.scan({ TableName: TableName }).promise();
         break;
         
+        
       case "GET /v1/{id}":
         body = await dynamo
           .get({
@@ -51,6 +53,34 @@ exports.handler = async (event, context) => {
           .promise();
         body = `Item ${requestJSON.message} added`;
         break;
+        
+        
+      //=================================
+      case "POST /calcpoints":
+        console.log("Processing...");
+        const req = JSON.parse(event.body);
+        const points = Math.trunc(req.value);
+          
+        if (points !== 0) {
+          await dynamo
+            .update({
+              TableName: TableName,
+              Key: { id: req.id },
+              UpdateExpression: "SET points = points + :points",
+              ExpressionAttributeValues: {
+                  ":points": Math.trunc(points)
+              },
+              ReturnValues: "UPDATED_NEW"
+            }).promise();
+            
+          body = `${points} point${points === 1 ? "" : "s"} updated`;
+        } else {
+          body = `no point updated`;
+        };
+
+        break;
+      //=================================
+      
         
       case "POST /v1/{id}":
         await dynamo
