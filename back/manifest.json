@@ -55,7 +55,7 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "c2rcbzh5tj.execute-api.us-east-2.amazonaws.com",
+        "host": "https://5ngovpktp9.execute-api.us-east-1.amazonaws.com",
         "path": "*"
       }
     }

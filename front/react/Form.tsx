@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import classes from './Form.module.css'
 import axios from 'axios'
 
-const Lead: StorefrontFunctionComponent = () => {
+const Form: StorefrontFunctionComponent = () => {
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
 
@@ -16,7 +16,7 @@ const Lead: StorefrontFunctionComponent = () => {
 
     const handleSubmit = (e: React.FormEvent<any>) => {
         e.preventDefault()
-        axios.post('https://c2rcbzh5tj.execute-api.us-east-2.amazonaws.com/items',{
+        axios.post('https://5ngovpktp9.execute-api.us-east-1.amazonaws.com/v1',{
           nome, email
         })
     }
@@ -41,4 +41,4 @@ const Lead: StorefrontFunctionComponent = () => {
     )
 }
 
-export default Lead
+export default Form
