@@ -1,46 +1,5 @@
 {
-  "vtex.menu@2.x:menu#category-menu": {
-    "props": {
-      "experimentalOptimizeRendering": true
-    },
-    "children": [
-      "menu-item#category-promotional",
-      "menu-item#category-album"
-    ]
-  },
-  "menu-item#category-promotional": {
-    "props": {
-      "id": "menu-item-promotional",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "PROMOÇÃO",
-        "text": "PROMOÇÃO"
-      }
-    }
-  },
-
-  "menu-item#category-album": {
-    "props": {
-      "id": "menu-item-album",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/",
-        "noFollow": false,
-        "tagTitle": "ALBUM",
-        "text": "ALBUM"
-      }
-    }
-  },
-
-  "menu-item#about-us": {
+   "menu-item#about-us": {
     "props": {
       "id": "menu-item-about-us",
       "type": "custom",

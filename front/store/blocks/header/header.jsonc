@@ -10,7 +10,6 @@
   "header-layout.desktop": {
     "children": [
       "flex-layout.row#1-desktop",
-      //"flex-layout.row#3-desktop",
       "sticky-layout#1-desktop"
     ]
   },
@@ -29,7 +28,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#2-desktop", "flex-layout.row#3-desktop"]
+    "children": ["flex-layout.row#2-desktop"]
   },
 
   "flex-layout.row#2-desktop": {
@@ -44,8 +43,11 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
+      "flex-layout.col#text-aboutus",
+      "flex-layout.col#spacer",
       "search-bar",
       "flex-layout.col#spacer",
+      "login",
       "minicart.v2#desktop"
     ]
   },
@@ -62,18 +64,6 @@
     }
   },
 
-  "flex-layout.row#3-desktop": {
-    "props": {
-      "blockClass": "main-header",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": ["flex-layout.col#category-menu"]
-  },
-
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle",
@@ -82,19 +72,36 @@
     "children": ["logo#desktop"]
   },
 
-  "flex-layout.col#category-menu": {
+  "flex-layout.col#text-aboutus": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "horizontalAlign": "left"
     },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
+    "children": ["menu-item#about-us"]
   },
-
+  
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
       "url": "https://raw.githubusercontent.com/rtof83/upmedal_client/main/images/upmedal.png",
       "width": "180"
+    }
+  },
+
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "Sobre nós"
+      }
     }
   },
 

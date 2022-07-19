@@ -1,54 +1,60 @@
 {
   "store.home": {
     "blocks": [
-      "flex-layout.row#demo",
+      //"flex-layout.row#demo",
+      "list-context.image-list#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
+      "rich-text#copywrite",
       //"flex-layout.row#deals",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      //"info-card#home",
-      //"rich-text#question",
+      "info-card#home",
       //"rich-text#link",
       "newsletter"
     ]
   },
 
-  "flex-layout.row#demo": {
-    "children": ["list-context.image-list#demo"],
-    "props": {
-      "blockClass": "carousel-block"
-    }
-  },
-
-  "list-context.image-list#demo": {
+  "list-context.image-list#demo":{
     "children": ["slider-layout#demo-images"],
-    "props": {
-      "images": [
-        {
-          "image": "https://raw.githubusercontent.com/rtof83/upmedal_client/main/images/banner01.png"
-          //"mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        },
-        {
-          "image": "https://raw.githubusercontent.com/rtof83/upmedal_client/main/images/banner02.png"
-          //"mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        }
-      ]
-    }
+  "props": {
+    "height": 720,
+    "images": [
+      {
+        "image": "https://raw.githubusercontent.com/rtof83/upmedal_client/main/images/banner01.png",
+        "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+      },
+      {
+        "image": "https://raw.githubusercontent.com/rtof83/upmedal_client/main/images/banner02.png",
+        "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+      }
+    ]
+  }
+},
+"slider-layout#demo-images": {
+  "props": {
+    "itemsPerPage": {
+      "desktop": 1,
+      "tablet": 1,
+      "phone": 1
+    },
+    "infinite": false,
+    "showNavigationArrows": "desktopOnly",
+    "blockClass": "carousel"
+  }
   },
 
-  "slider-layout#demo-images": {
+  "info-card#home": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel",
-      "slideTransition": { "speed": 200, "delay": 0, "timing": "" }
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Comece o dia com confiança, sentindo-se fresco e limpo até o final. ",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
     }
   },
 
@@ -56,6 +62,12 @@
     "props": {
       "text": "### você está vendo produtos",
       "blockClass": "shelfTitle"
+    }
+  },
+  "rich-text#copywrite": {
+    "props": {
+      "text": "Relaxe, desfrute e compartilhe as fragrâncias de Trafum. \n Nossos perfumes naturais, hipoalergênicos para o corpo e o ambiente são feitos com óleos essenciais e naturais para um aroma limpo, sutil e que cheira tão fresco quanto parece.",
+      "blockClass": "about"
     }
   },
 
