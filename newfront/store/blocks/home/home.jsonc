@@ -13,6 +13,12 @@
       "newsletter"
     ]
   },
+  "newsletter": {
+    "props": {
+      "label": "Não perca nossos lançamentos",
+      "blockClass": "newsletter"
+    }
+  },
 
   "list-context.image-list#demo": {
     "children": ["slider-layout#demo-images"],

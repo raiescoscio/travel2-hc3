@@ -56,8 +56,8 @@
       "semanticColors": {
         "background": {
           "base": "#ffffff",
-          "base--inverted": "#03044e",
-          "action-primary": "#0F3E99",
+          "base--inverted": "#dff7e5",
+          "action-primary": "#0f992f",
           "action-secondary": "#eef3f7",
           "emphasis": "#f71963",
           "disabled": "#f2f4f5",
@@ -74,8 +74,8 @@
           "muted-5": "#f2f4f5"
         },
         "hover-background": {
-          "action-primary": "#072c75",
-          "action-secondary": "#dbe9fd",
+          "action-primary": "#077524",
+          "action-secondary": "#dbfde2",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
@@ -90,8 +90,8 @@
           "muted-5": "#f2f4f5"
         },
         "active-background": {
-          "action-primary": "#0c389f",
-          "action-secondary": "#d2defc",
+          "action-primary": "#0c9f27",
+          "action-secondary": "#d2fcd3",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
@@ -149,8 +149,8 @@
           "warning--faded": "#fff6e0"
         },
         "border": {
-          "action-primary": "#0F3E99",
-          "action-secondary": "#eef3f7",
+          "action-primary": "#14990f",
+          "action-secondary": "#f0f7ee",
           "emphasis": "#f71963",
           "disabled": "#e3e4e6",
           "success": "#8bc34a",
@@ -166,8 +166,8 @@
           "muted-5": "#f2f4f5"
         },
         "hover-border": {
-          "action-primary": "#072c75",
-          "action-secondary": "#dbe9fd",
+          "action-primary": "#0e7507",
+          "action-secondary": "#dcfddb",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
@@ -182,8 +182,8 @@
           "muted-5": "#f2f4f5"
         },
         "active-border": {
-          "action-primary": "#0c389f",
-          "action-secondary": "#d2defc",
+          "action-primary": "#0c9f16",
+          "action-secondary": "#d6fcd2",
           "emphasis": "#dd1659",
           "success": "#8bc34a",
           "success--faded": "#eafce3",
