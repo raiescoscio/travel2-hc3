@@ -94,12 +94,5 @@
       "text": "**Relaxe, desfrute e compartilhe as fragrâncias de Trafum. \n Nossos perfumes naturais, hipoalergênicos para o corpo \n e o ambiente são feitos com óleos essenciais e naturais \n para um aroma limpo, sutil e que cheira tão fresco quanto parece.**",
       "blockClass": "question"
     }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
-    }
   }
 }
