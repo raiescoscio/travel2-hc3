@@ -9,6 +9,7 @@
     padding: 0 1rem;
   }
 }
+
 @media screen and (min-width: 80rem) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -18,21 +19,17 @@
 
 .flexRowContent--menu-link {
   background-color: #03044e;
-  color: #ffffff;
+  color: #fff;
 }
 
 .flexRowContent--main-header {
-  background-color: rgb(33, 33, 33);
-}
-
-.flexRow--main-header {
-  background-color: rgb(33, 33, 33);
+  background-color: #f0f0f0;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
   padding: 0.625rem 0.5rem;
-  -color: rgb(33, 33, 33);
+  background-color: #f0f0f0;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -42,11 +39,11 @@
 
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
   color: #727273;
-  font-size: 22px;
+  font-size: 14px;
 }
 
 .flexRow--deals {
-  background-color: #a7afbd;
+  background-color: #0F3E99;
   padding: 14px 0px;
 }
 
@@ -56,6 +53,8 @@
 
 .flexRow--deals .flexCol {
   align-items: center;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
 
 .flexCol--filterCol {
@@ -96,18 +95,4 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
-}
-
-.flexRow--menu-row {
-  background-color: rgb(185, 185, 185);
-}
-
-.flexRowContent--menu-row {
-  background-color: rgb(185, 185, 185);
-  position: fixed;
-  bottom: 0;
-}
-
-.flexRow--carousel-block {
-  padding-top: 1rem;
 }

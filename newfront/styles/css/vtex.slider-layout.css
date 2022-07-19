@@ -1,8 +1,5 @@
 .sliderLayoutContainer {
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
-  max-width: 960px;
 }
 
 .sliderLayoutContainer--carousel {

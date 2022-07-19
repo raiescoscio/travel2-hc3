@@ -18,7 +18,7 @@
 
 /* main header desktop has a bigger padding when not stuck */
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
@@ -36,7 +36,7 @@
  */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  transition: padding 0.2s ease, background 0.2s ease;
+  transition: padding 0.3s ease, background 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -61,8 +61,7 @@
 
 /* stick wrapper with the same color as the desktop/mobile header */
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
-  /* background-color: #f0f0f0; */
-  background-color: #ffffff;
+  background-color: #f0f0f0;
 }
 
 /* resize the logo for neat effect */
@@ -80,6 +79,6 @@
     :global(.vtex-store-components-3-x-searchBarContainer),
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-    transition: 0.2s;
+    transition: none;
   }
 }
