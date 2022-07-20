@@ -1,0 +1,229 @@
+{
+    "store.custom#tfdotz": {
+    "blocks": [
+      "list-context.image-list#bannertfdotz",
+      "rich-text#tfdotz",
+     "tab-layout#comofunciona",
+     "list-context.image-list#tfdotz-banner-final"
+    ]
+  },
+
+  "list-context.image-list#bannertfdotz": {
+    "children": ["slider-layout#demo-tfdotz"],
+    "props": {
+      "fullWidth":true,
+      "height": 460,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-landingpage.jpg",
+          "mobileImage": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-landingpage.jpg"
+        }
+]
+    }
+  },
+
+  "slider-layout#demo-tfdotz": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#tfdotz" : {
+    "props": {
+      "text": "### Ainda mais motivos para comprar conosco:",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "tab-layout#comofunciona": { //Cria lista de botões
+    "children": [
+      "tab-list",
+      "tab-content"
+    ]
+  },
+
+  "tab-list" : { // Botões clicáveis
+  "children": [
+    "tab-list.item#comoganhar",
+    "tab-list.item#vantagens",
+    "tab-list.item#resgate",
+    "tab-list.item#duvidas"
+    ]
+},
+
+"tab-content" : { //Conteúdo dinâmico ao clicar em cada botão
+  "children": [
+    "tab-content.item#comoganhar",
+    "tab-content.item#vantagens",
+    "tab-content.item#resgate",
+    "tab-content.item#duvidas"
+    
+  
+    ]
+},
+
+"tab-list.item#comoganhar" : {
+  "props": {
+    "tabId": "comoganhar", // ID utilizado para linkar com seu respectivo conteúdo
+    "label": "Como ganhar", // nome que aparece no botão
+    "defaultActiveTab": true // Botão que fica acionado
+  }
+},
+
+"tab-list.item#vantagens" : {
+  "props": {
+    "tabId": "vantagens",  // pode usar nome diferente nas props, desde q seja o mesmo em 'content.item'
+    "label": "Vantagens"
+  }
+},
+
+"tab-list.item#resgate" : {
+  "props": {
+    "tabId": "resgate",
+    "label": "Resgate"
+  
+  }
+},
+
+"tab-list.item#duvidas" : {
+  "props": {
+    "tabId": "duvidas",
+    "label": "Dúvidas"
+  }
+},
+
+"tab-content.item#comoganhar": {
+  "children": [
+    "info-card#comoganhar"
+  ],
+  "props": {
+    "tabId": "comoganhar"
+  }
+},
+
+"tab-content.item#vantagens": {
+  "children": [
+    "info-card#vantagens"
+  ],
+  "props": {
+    "tabId": "vantagens"
+  }
+},
+
+"tab-content.item#resgate": {
+  "children": [ 
+    "info-card#resgate"
+  ],
+  "props": {
+    "tabId": "resgate"
+  }
+},
+
+"tab-content.item#duvidas": {
+  "children": [
+     "info-card#duvidas"
+  ],
+  "props": {
+    "tabId": "duvidas"
+  }
+},
+
+"info-card#comoganhar" : {
+  "props" : {
+    
+    "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/como-ganhar.png",
+      "headline": "Chegou o tfdotz!", //titulo
+      "subhead": " Continue comprando normalmente em nossa loja.<br>A cada R$1,00 em compras você ganha 1 ponto e vai acumulando na sua conta.<br> A partir daí, basta trocar seus pontos como quiser em nossos parceiros.", // subtítulo
+      "textAlignment": "left",
+      "height" : 400,
+      "callToActionMode": "null"
+      
+  }
+},
+
+"info-card#vantagens" : {
+  "props" : {
+    
+    "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/vantagens.png",
+      "headline": "Aí eu vi vantagem!", //titulo
+      "subhead": "Com o nosso programa, quanto mais você compra <br>mais pontos acumula e troca por prêmios cada vez mais legais <br>em nossos centenas de parceiros.", // subtítulo
+      "textAlignment": "left",
+      "height" : 400,
+      "callToActionMode": "null"
+      
+  }
+},
+
+"info-card#resgate" : {
+  "props" : {
+    
+    "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/resgate.png",
+      "headline": "Como troco meus pontos?", //titulo
+      "subhead": " Quando atingir pelo menos 100 pts você já <br>pode trocar por produtos ou experiências em <br> um dos nossos parceiros, em um ambiente totalmente seguro.", // subtítulo
+      "textAlignment": "left",
+      "height" : 500,
+      "callToActionMode": "null"
+      
+  }
+},
+
+"info-card#duvidas" : {
+  "props" : {
+    
+    "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/duvidas.png",
+      "headline": "Tem alguma dúvida?", //titulo
+      "subhead": " Lembre-se: Desenvolvemos esse programa pensando.<br>totalmente em você para que tenha a melhor experiência em nossa loja. <br> Mas caso tenha alguma dúvida, nos envie um email:<br> trafum@travellog.com", // subtítulo
+      "textAlignment": "left",
+      "height" : 400,
+      "callToActionMode": "null"
+      
+  }
+},
+
+"list-context.image-list#tfdotz-banner-final": {
+    "children": ["slider-layout#tfdotz-banner-final"],
+    "props": {
+      "preload": true,
+      "height": 650,
+      "images": [
+        {
+          "image": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-beneficios.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "https://raw.githubusercontent.com/raiescoscio/trafum-hiring-coders/master/images/Banner-tfdotz-beneficios.jpg",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#tfdotz-banner-final": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
+    }
+  }
+}

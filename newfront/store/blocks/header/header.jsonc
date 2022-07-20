@@ -96,9 +96,11 @@
 
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-products",
+      "menu-item#category-store",
+      "menu-item#category-about-us",
+      "menu-item#category-faq",
+      "menu-item#category-contact-us"
     ],
     "props": {
       "orientation": "vertical"
