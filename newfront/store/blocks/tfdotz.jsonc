@@ -12,7 +12,7 @@
     "children": ["slider-layout#demo-tfdotz"],
     "props": {
       "fullWidth":true,
-      "height": 460,
+      "height": 566,
       "preload": true,
       "images": [
         {

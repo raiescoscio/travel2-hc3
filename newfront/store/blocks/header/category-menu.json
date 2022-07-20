@@ -8,7 +8,7 @@
       "menu-item#category-store",
       "menu-item#category-about-us",
       "menu-item#category-faq",
-      "menu-item#category-contact-us"
+      "menu-item#category-tfdotz"
     ]
   },
   "menu-item#category-products": {
@@ -70,18 +70,18 @@
       }
     }
   },
-  "menu-item#category-contact-us": {
+  "menu-item#category-tfdotz": {
     "props": {
-      "id": "menu-item-category-contact-us",
+      "id": "menu-item-category-tfdotz",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/contact-us",
+        "href": "/programa-de-pontos",
         "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
+        "tagTitle": "Programa de Pontos",
+        "text": "Programa de Pontos"
       }
     }
   }
