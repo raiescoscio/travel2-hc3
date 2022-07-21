@@ -19,6 +19,7 @@
       "rich-text#about-us"
     ],
     "props": {
+      "marginLeft": 8,
       "blockclass": "textColumn",
       "preventVerticalStretch": true
     }
@@ -42,7 +43,7 @@
   },
   "video#about-us": {
     "props": {
-      "src": "https://cdn.pixabay.com/vimeo/451623797/Pot%20-%2047551.mp4?width=1272&expiry=1658371785&hash=92d132843dde8875777becdc957cc22bd9c5edc2",
+      "src": "https://vimeo.com/731959668",
       "width": "100%",
       "height": "100%"
     }
