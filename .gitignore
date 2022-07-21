@@ -1,7 +1,37 @@
-/back/docs
-/back/node/node_modules
-/back/others
+### SublimeText ###
+*.sublime-workspace
 
-/files
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
 
-/front/others
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# App specific
+node_modules/
+docs/_book/
+.tmp
+.idea
+npm-debug.log
+.build/
+lib
+*.orig
+react/package-lock.json
