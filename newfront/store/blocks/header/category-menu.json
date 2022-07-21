@@ -4,7 +4,7 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-products",
+      
       "menu-item#category-store",
       "menu-item#category-about-us",
       "menu-item#category-faq",

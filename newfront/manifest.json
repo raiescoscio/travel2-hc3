@@ -1,12 +1,13 @@
 {
   "vendor": "travellog",
   "name": "sarugado",
-  "version": "5.1.1",
+  "version": "1.1.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
     "sitemap": "0.x",
-    "docs": "0.x"
+    "docs": "0.x",
+    "node": "x.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
