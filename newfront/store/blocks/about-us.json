@@ -27,14 +27,14 @@
   "rich-text#title-about-us": {
     "props": {
       "text":
-      "# Create meaningful and relevant experiences.",
+      "# Traga a natureza com você.",
       "blockClass": "title"
     }
   },
 
   "image#mobile-phone": {
     "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+      "src": "https://i.ibb.co/GxM9nwK/rsz-1magenta-folhas-ilustradas-perfume-produto-r-tulo.png",
       "maxHeight": "",
       "maxWidth": "",
       "blockClass": "storePrint"
@@ -42,14 +42,14 @@
   },
   "video#about-us": {
     "props": {
-      "src": "https://www.youtube.com/embed/JgkrlaF52WQ",
+      "src": "https://cdn.pixabay.com/vimeo/451623797/Pot%20-%2047551.mp4?width=1272&expiry=1658371785&hash=92d132843dde8875777becdc957cc22bd9c5edc2",
       "width": "100%",
       "height": "100%"
     }
   },
   "rich-text#about-us": {
     "props": {
-      "text": "**Optimized store framework** \n Free your front-end with our React + Node store framework. Improve usability and SEO, while driving more conversion with modular components, single page applications, and a ready-for-PWA structure. \n **Multi-currency and language** \n Go international with multiple storefronts to support different languages and easily manage local currencies and payment conditions. \n **Serverless development platform** \n Reduce loading time, improve usability, and make the best out of SEO. Developing scalable components with a comprehensive, easy-to-use toolset, you can build stores faster than ever.",
+      "text": "Desde a criação de cada produto Trafum até sua embalagem, criamos uma viagem intimamente ligada à nossa paixão. Cada produto Trafum é cuidadosamente selecionado por nossa equipe de especialistas e passa por um longo processo de criação. Isto nos permite obter os melhores resultados em cada área: desde combinações de fragrâncias que se misturam harmoniosamente, até uma coleção única de perfumes puros e naturais com uma fina mistura de frutas, especiarias, madeiras e florais.",
       "blockClass": "about"
     }
   }
