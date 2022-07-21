@@ -1,0 +1,39 @@
+{
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-store",
+      "menu-item#category-about-us",
+      "menu-item#category-faq",
+      "menu-item#category-tfdotz"
+    ]
+  },
+  
+  "menu-item#mobile-footer-menu": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Menu",
+        "text": "Menu"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-footer-menu"]
+  },
+  "vtex.menu@2.x:submenu.accordion#mobile-footer-menu": {
+    "children": ["vtex.menu@2.x:menu#mobile-footer-menu"]
+  },
+
+  "vtex.menu@2.x:menu#mobile-footer-menu": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-products",
+      "menu-item#category-store",
+      "menu-item#category-about-us",
+      "menu-item#category-faq",
+      "menu-item#category-tfdotz"
+    ]
+  }
+}

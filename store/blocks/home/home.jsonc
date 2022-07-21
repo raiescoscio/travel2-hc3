@@ -1,0 +1,105 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+       "__fold__",
+       "rich-text#shelf-title",
+       "flex-layout.row#shelf",
+      "info-card#home",      
+      "rich-text#question",
+      //"rich-text#link",
+      "newsletter"
+    ]
+  },
+  "newsletter": {
+    "props": {
+      "label": "Não perca nossos lançamentos",
+      "blockClass": "newsletter"
+    }
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "fullWidth":true,
+      "height": 570,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://i.ibb.co/L9CC9t2/Banner-Promo-o-Sof-s-e-Poltronas-Ecommerce-e-loja-virtual-1.png",
+          "mobileImage": "https://i.ibb.co/drswbvP/Banner-Mentoria-2.png"
+        },
+        {
+          "image": "https://i.ibb.co/ZTF3c91/rsz-banner-tfdotz.jpg",
+          "mobileImage": "https://i.ibb.co/1bmZwXm/Banner-Mentoria-1.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Profutos Trafum",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "142"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://i.ibb.co/GxM9nwK/rsz-1magenta-folhas-ilustradas-perfume-produto-r-tulo.png",
+      "headline": "Trafum \n Body and Room",
+      "subhead": "Comece o dia com confiança, \n sentindo-se fresco e limpo até o final. ",
+      "callToActionText": "DESCUBRA",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**Relaxe, desfrute e compartilhe as fragrâncias de Trafum. \n Nossos perfumes naturais, hipoalergênicos para o corpo \n e o ambiente são feitos com óleos essenciais e naturais \n para um aroma limpo, sutil e que cheira tão fresco quanto parece.**",
+      "blockClass": "question"
+    }
+  }
+}

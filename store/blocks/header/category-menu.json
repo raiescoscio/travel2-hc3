@@ -1,0 +1,88 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      
+      "menu-item#category-store",
+      "menu-item#category-about-us",
+      "menu-item#category-faq",
+      "menu-item#category-tfdotz"
+    ]
+  },
+  "menu-item#category-products": {
+    "props": {
+      "id": "menu-item-category-products",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/our-products/",
+        "noFollow": false,
+        "tagTitle": "Nossos Produtos",
+        "text": "Nossos Produtos"
+      }
+    }
+  },
+  "menu-item#category-store": {
+    "props": {
+      "id": "menu-item-category-store",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/store/",
+        "noFollow": false,
+        "tagTitle": "Loja",
+        "text": "Loja"
+      }
+    }
+  },"menu-item#category-about-us": {
+    "props": {
+      "id": "menu-item-category-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us/",
+        "noFollow": false,
+        "tagTitle": "Sobre nós",
+        "text": "Sobre nós"
+      }
+    }
+  },
+  "menu-item#category-faq": {
+    "props": {
+      "id": "menu-item-category-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+  "menu-item#category-tfdotz": {
+    "props": {
+      "id": "menu-item-category-tfdotz",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/programa-de-pontos",
+        "noFollow": true,
+        "tagTitle": "Programa de Pontos",
+        "text": "Programa de Pontos"
+      }
+    }
+  }
+}

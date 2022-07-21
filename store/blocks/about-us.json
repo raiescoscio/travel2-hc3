@@ -1,0 +1,57 @@
+{
+  "store.custom#about-us": {
+    "blocks": [
+      "flex-layout.row#about-us",
+      "video#about-us"
+    ]
+  },
+
+  "flex-layout.row#about-us": {
+    "children": [
+      "image#mobile-phone",
+      "flex-layout.col#text-about-us"
+    ]
+  },
+
+  "flex-layout.col#text-about-us": {
+    "children": [
+      "rich-text#title-about-us",
+      "rich-text#about-us"
+    ],
+    "props": {
+      "marginLeft": 8,
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#title-about-us": {
+    "props": {
+      "text":
+      "# Traga a natureza com você.",
+      "blockClass": "title"
+    }
+  },
+
+  "image#mobile-phone": {
+    "props": {
+      "src": "https://i.ibb.co/GxM9nwK/rsz-1magenta-folhas-ilustradas-perfume-produto-r-tulo.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  },
+  "video#about-us": {
+    "props": {
+      "src": "https://vimeo.com/731959668",
+      "width": "100%",
+      "height": "100%"
+    }
+  },
+  "rich-text#about-us": {
+    "props": {
+      "text": "Desde a criação de cada produto Trafum até sua embalagem, criamos uma viagem intimamente ligada à nossa paixão. Cada produto Trafum é cuidadosamente selecionado por nossa equipe de especialistas e passa por um longo processo de criação. Isto nos permite obter os melhores resultados em cada área: desde combinações de fragrâncias que se misturam harmoniosamente, até uma coleção única de perfumes puros e naturais com uma fina mistura de frutas, especiarias, madeiras e florais.",
+      "blockClass": "about"
+    }
+  }
+}
