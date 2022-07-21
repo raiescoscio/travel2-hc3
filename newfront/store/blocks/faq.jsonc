@@ -56,12 +56,12 @@
   },
   "rich-text#question1": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Entregamos para todo Brasil?"
     }
   },
   "rich-text#answer1": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234."
+      "text": "Com certeza, selecione seu produto e verifique a disponibilidade."
     }
   },
 
@@ -86,12 +86,12 @@
   },
   "rich-text#question2": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "Estou em dúvida se vou ter alergia, devo me preocupar?"
     }
   },
   "rich-text#answer2": {
     "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
+      "text": "Todos os produtos são dermatologicamente testados e sempre tem seus componentes destacados, em caso de dúvidas consulte seu médico."
     }
   },
 
@@ -117,12 +117,12 @@
   },
   "rich-text#question3": {
     "props": {
-      "text": "How can I change my shipping address?"
+      "text": "Como devo usar os perfumes Trafum?"
     }
   },
   "rich-text#answer3": {
     "props": {
-      "text": "Call us at the number (212) 1234-1234."
+      "text": "Utilize-os normalmente no corpo, ou borrife-o no ambiente, preferencialmente o mais alto possível em algumas direções para ter melhor cobertura."
     }
   },
 
@@ -148,12 +148,12 @@
   },
   "rich-text#question4": {
     "props": {
-      "text": "How can I track my order?"
+      "text": "Tenho um pedido grande a fazer, tenho direito a um desconto?"
     }
   },
   "rich-text#answer4": {
     "props": {
-      "text": "After logging into your account, you can find this info at the link Orders."
+      "text": "Com certeza, entre em contato no telefone (858) 5632224-2344544-22 e fale com a gente."
     }
   },
 

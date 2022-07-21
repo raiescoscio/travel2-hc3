@@ -1,0 +1,58 @@
+{
+    "store.custom#store": {
+      "blocks": [
+         "rich-text#shelf-title",
+         "flex-layout.row#shelf",
+         "rich-text#shelf-title",
+         "flex-layout.row#shelf",
+         "__fold__",
+         "list-context.image-list#bannertfdotz",
+         "rich-text#shelf-title",
+         "flex-layout.row#shelf"
+      ]
+    },
+    "slider-layout#store-images": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "blockClass": "carousel"
+      }
+    },
+  
+    "rich-text#shelf-title": {
+      "props": {
+        "text": "## Profutos Trafum",
+        "blockClass": "shelfTitle"
+      }
+    },
+    "flex-layout.row#shelf": {
+      "children": ["list-context.product-list#store1"]
+    },
+    "list-context.product-list#store1": {
+      "blocks": ["product-summary.shelf"],
+      "children": ["slider-layout#store-products"],
+      "props": {
+        "orderBy": "OrderByTopSaleDESC",
+        "collection": "142"
+      }
+    },
+    "slider-layout#store-products": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 3,
+          "tablet": 3,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": "shelf"
+      }
+    }
+    
+
+}
